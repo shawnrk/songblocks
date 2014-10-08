@@ -1,51 +1,36 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640">
+    <meta name="description" content="Song Blocks : A no-tech, toddler-friendly controller for Sonos using NFC tags">
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen">
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Song Blocks by shawnrk</title>
+    <title>Song Blocks</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/shawnrk/songblocks">View on GitHub</a>
-    <div class="shell">
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Song Blocks</h1>
-            <h2>A no-tech, toddler-friendly controller for Sonos using NFC tags</h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/shawnrk/songblocks">View on GitHub</a>
 
-      <section id="downloads">
-        <span class="inner">
-          <a href="https://github.com/shawnrk/songblocks/zipball/master" class="zip"><em>download</em> .ZIP</a><a href="https://github.com/shawnrk/songblocks/tarball/master" class="tgz"><em>download</em> .TGZ</a>
-        </span>
-      </section>
+          <h1 id="project_title">Song Blocks</h1>
+          <h2 id="project_tagline">A no-tech, toddler-friendly controller for Sonos using NFC tags</h2>
 
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/shawnrk/songblocks/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/shawnrk/songblocks/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
 
-      <span class="banner-fix"></span>
-
-
-      <section id="main_content">
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
         <h3>
 <a name="welcome-to-song-blocks" class="anchor" href="#welcome-to-song-blocks"><span class="octicon octicon-link"></span></a>Welcome to Song Blocks</h3>
 
@@ -75,16 +60,15 @@
 <li>3/8" thick walnut boards were cut down to pieces measuring 1-1/2"x3-1/4" (two of these form each block)<br>
 </li>
 <li><p>Cavities were routed out for the NFC tag and magnets (they sit 3/16" below the outer surface)
-<a href="https://www.dropbox.com/s/ivab56cmj4c9a6c/factory.JPG?dl=1">Adding NFC tags and gluing in the magnets</a></p></li>
+<img src="https://www.dropbox.com/s/ivab56cmj4c9a6c/factory.JPG?dl=1" alt="Adding NFC tags and gluing in the magnets"></p></li>
 <li><p>The halves were then glued and clamped
-<a href="https://www.dropbox.com/s/ullvmcmbyeu25km/press.JPG?dl=1">Clamping</a></p></li>
+<img src="https://www.dropbox.com/s/ullvmcmbyeu25km/press.JPG?dl=1" alt="Clamping"></p></li>
 <li><p>Each side was evened out by cutting off a very thin slice with a band saw</p></li>
 <li>The edges were given a 1/8" radius round-over with a router</li>
 <li><p>The sides and edges were sanded with 120 grit (the seam between the halves were rendered barely visible)
-<a href="https://www.dropbox.com/s/ufv3jjwsialenos/squareround.JPG?dl=1">Before &amp; After</a>
-<a href="https://www.dropbox.com/s/y5lrcd2twwp79yn/squareround2.JPG?dl=1">Before &amp; After 2</a></p></li>
+<img src="https://www.dropbox.com/s/ufv3jjwsialenos/squareround.JPG?dl=1" alt="Before &amp; After"><img src="https://www.dropbox.com/s/y5lrcd2twwp79yn/squareround2.JPG?dl=1" alt="Before &amp; After 2"></p></li>
 <li><p>The numbers were imprinted with an ink stamp set and then burned in with a soldering iron
-<a href="https://www.dropbox.com/s/z3jzznzlrof9oyq/burn.JPG?dl=1">Burn</a></p></li>
+<img src="https://www.dropbox.com/s/z3jzznzlrof9oyq/burn.JPG?dl=1" alt="Burn"></p></li>
 <li><p>The wood has been left natural - no oil, sealant, etc.</p></li>
 </ul><h3>
 <a name="the-drawer" class="anchor" href="#the-drawer"><span class="octicon octicon-link"></span></a>The drawer</h3>
@@ -99,19 +83,14 @@
 
 <p>I haven't coded in over a decade and this is my first Python project.  So its ugly, but functional and pretty self-explanatory. The GitHub repo is <a href="https://github.com/shawnrk/songblocks">here</a>.</p>
       </section>
+    </div>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>this project by <a href="https://github.com/shawnrk">shawnrk</a> can be found on <a href="https://github.com/shawnrk/songblocks">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Song Blocks maintained by <a href="https://github.com/shawnrk">shawnrk</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
-
     </div>
 
               <script type="text/javascript">
@@ -124,6 +103,7 @@
             pageTracker._trackPageview();
             } catch(err) {}
           </script>
+
 
   </body>
 </html>
