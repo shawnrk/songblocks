@@ -49,7 +49,11 @@
         <h3>
 <a name="welcome-to-song-blocks" class="anchor" href="#welcome-to-song-blocks"><span class="octicon octicon-link"></span></a>Welcome to Song Blocks</h3>
 
-<p>I built Song Blocks so my toddler could play music on the living room Sonos by himself.  Wood blocks containing NFC tags and magnets mount to a drawer face on a sideboard behind which are matching magnets, an NFC controller and a Raspberry Pi embedded computer.  Each block's NFC tag is mapped to a song which plays when the block attaches, and the song title is tweeted at <a href="https://twitter.com/songblocks">@songblocks</a>.  A primary design goal was to make the technology disappear completely: the experience is tactile, organic and aural - and quite magical.</p>
+<p>I built Song Blocks so my toddler could play music on the living room Sonos by himself.  </p>
+
+<p>Wood blocks containing NFC tags magnetically attach to a drawer face behind which is a Raspberry Pi and an NFC controller.  Each block's NFC tag is mapped to a song which plays when the block attaches, and the song title is tweeted at <a href="https://twitter.com/songblocks">@songblocks</a>.  </p>
+
+<p>A primary design goal was to make the technology disappear completely: the experience is organic, tactile and aural - and quite magical.</p>
 
 <p><img src="https://www.dropbox.com/s/7ny63nauakkqr4p/blocks.JPG?dl=1" alt="Blocks"></p>
 
@@ -57,15 +61,36 @@
 <a name="technologies-used" class="anchor" href="#technologies-used"><span class="octicon octicon-link"></span></a>Technologies Used</h3>
 
 <ul>
-<li>Raspberry Pi Model B+ with a WiFi adapter</li>
-<li>
-<a href="http://www.adafruit.com/product/364">This</a> NFC controller</li>
+<li>Raspberry Pi</li>
+<li>NFC controller board</li>
 <li>NFC tags</li>
 <li>Rare-earth magnets</li>
 <li>A simple Python script (~100 lines) I wrote, hosted <a href="https://github.com/shawnrk/songblocks">here</a>
 </li>
 <li>Open-source Python libs: <a href="https://launchpad.net/nfcpy">nfcpy</a> for the NFC interface, <a href="https://github.com/Mezgrman/TweetPony">TweetPony</a> for the Twitter interface</li>
-</ul>
+</ul><h3>
+<a name="making-the-blocks" class="anchor" href="#making-the-blocks"><span class="octicon octicon-link"></span></a>Making the blocks</h3>
+
+<p>I used 3/8" thick walnut boards and cut them down to pieces that were about 1-1/2"x3-1/4".<br>
+Cavities were routed out for the NFC tag and magnets
+The halves were then glued and clamped
+Each side was cleaned up with a band saw, taking just a thin slice off each side to even things up
+The edges were rounded off with a router
+The sides and edges were sanded with 120 grit sandpaper (the seam between the halves is barely visible)
+The numbers were imprinted with rubber stamps, and then burned in with a soldering iron
+I've opted to leave the wood natural - no oil, sealant, etc.</p>
+
+<h3>
+<a name="the-drawer" class="anchor" href="#the-drawer"><span class="octicon octicon-link"></span></a>The drawer</h3>
+
+<p>Cavities were routed out from the inside of the drawer face to place the magnets
+The NFC controller board is just stuck on to the inside of the drawer face with electrical tape
+The Raspberry Pi just sits in the drawer, with its power cord running out the back</p>
+
+<h3>
+<a name="the-code" class="anchor" href="#the-code"><span class="octicon octicon-link"></span></a>The code</h3>
+
+<p>I haven't coded in more than a decade and this is my first Python project, so its ugly.  But functional, and pretty self-explanatory. The repo is <a href="https://github.com/shawnrk/songblocks">here</a>.</p>
       </section>
 
       <footer>
