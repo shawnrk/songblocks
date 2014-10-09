@@ -7,6 +7,7 @@ import nfc
 from _common import get_api
 import tweetpony
 
+# this function gets called when a NFC tag is detected
 def touched(tag):
     currentHour = time.localtime()[3]
     isNight = 0
@@ -15,7 +16,7 @@ def touched(tag):
         
     tag_uid = str(tag.uid).encode("hex")  # get the UID of the touched tag
 
-    #Look up the song to play and set the right volume
+    #Look up the song to play and set the right volume depending on whether it's day or night
     if tag_uid in songs:
         print("Tag touched: #" + songs[tag_uid][0] + ", UID: " + tag_uid)
         print ("  Song: " + songs[tag_uid][1])
@@ -59,7 +60,7 @@ url = 'x-sonos-http:_t%3a%3a17790141.mp3?sid=11&flags=32'  #default url
 time_offset = ''  #time offset (to skip song intros)
 
 songs = {
-# block_number, title, vol %, time_offset ('HH:MM:SS'), url
+# block_number, title, vol % (for normalization), time_offset (to skip intros, 'HH:MM:SS'), url
 '04436522c52980' : ['1','Paul Simon: Diamonds on the Soles of Her Shoes',1,time_offset,'x-sonos-http:_t%3a%3a17790141.mp3?sid=11&flags=32'],
 '04926422c52980' : ['2','Nina Simone: To Love Somebody',1,time_offset,'x-sonos-http:_t%3a%3a2995780.mp3?sid=11&flags=32'],
 '04dd3a22c52980' : ['3','Bob Marley: One Cup of Coffee',0.8,time_offset,'x-sonos-http:_t%3a%3a39299573.mp3?sid=11&flags=32'],
