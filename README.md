@@ -7,4 +7,4 @@ The main source file is songblocks.py.
 
 I'm a mediocre developer at best and this is my first Python project.  I was more interested in getting it working than doing it right, so I absolutely cut some corners.  For instance, part of the nfcpy library is in this repo because I didn't have the patience to figure out how Python's module path stuff worked, so I just put the module I needed in my working directory.  Also, _common.py is sourced from the example files in the TweetPony library and used to set up the connection to Twitter.
 
-Thanks to the developers of the [SoCo](https://github.com/SoCo/SoCo), [nfcpy](https://launchpad.net/nfcpy), and [TweetPony](https://github.com/Mezgrman/TweetPony), libraries. All were pretty easy to use for a novice.
+Thanks to the developers of the [SoCo](https://github.com/SoCo/SoCo) (Sonos interface), [nfcpy](https://launchpad.net/nfcpy) (NFC interface), and [TweetPony](https://github.com/Mezgrman/TweetPony) (Twitter interface), libraries. All were pretty easy to use for a novice.
